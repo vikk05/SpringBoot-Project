@@ -6,15 +6,13 @@
 
     <!-- bean definitions here -->
 
-    <bean id="specify" class="car.example.autowiringByName.specification">
+    <bean id="specify" class="car.example.AutowireByType.specification">
         <property  name="make" value="Land Rover"/>
         <property name="model" value="Defender"/>
     </bean>
 
-    <bean id="myCar" class="car.example.autowiringByName.car" autowire="byType"/>
-    <!--In autowiring byName, Spring injects a dependency
-    by matching the bean id with the property
-    name of the dependent object.-->
+    <bean id="myCar" class="car.example.AutowireByType.car" autowire="byType"/>
+
     <!--In autowiring byType, Spring injects a dependency
     by matching the type of the dependent object
      with the type of a bean available in the container.-->
