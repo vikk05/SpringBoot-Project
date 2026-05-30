@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean id="specify" class="car.example.autowiringByName.specification">
+        <property  name="make" value="Land Rover"/>
+        <property name="model" value="Defender"/>
+    </bean>
+    <bean id="myCar" class="car.example.autowiringByName.car" autowire="byName"/>
+    <!--In autowiring byName, Spring injects a dependency
+    by matching the bean id with the property
+    name of the dependent object.-->
+
+
+</beans>
