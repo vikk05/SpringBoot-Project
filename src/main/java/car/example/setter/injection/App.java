@@ -1,6 +1,5 @@
-package setter.injection;
+package car.example.setter.injection;
 
-import car.example.constructor.injection.car;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
